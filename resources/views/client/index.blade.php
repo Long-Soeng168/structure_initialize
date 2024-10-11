@@ -32,10 +32,10 @@
                         <!-- Content -->
                         <div
                             class="absolute top-1/2 left-3 md:left-5 lg:left-20 transform -translate-y-1/2 z-10 w-full max-w-md lg:max-w-[560px] text-left text-white px-4 lg:px-0">
-                            <h1
+                            <h2
                                 class=" text-[12px] sm:text-xl md:text-xl lg:text-5xl font-costum1 bg-gradient-to-r from-white to-white bg-clip-text text-transparent max-w-[9rem] sm:max-w-[11rem] md:max-w-full">
                                 {{ $item->name }}
-                            </h1>
+                            </h2>
                             <p
                                 class="text-[8px] line-clamp-2 sm:line-clamp-3 md:line-clamp-4 lg:line-clamp-5 sm:text-sm md:text-sm lg:text-lg  sm:text-white mt-1 lg:mt-5 max-w-[30ch] sm:max-w-[60ch] ">
                                 {{ $item->short_description }}
@@ -125,9 +125,9 @@
                 <button class="px-6 py-2 text-xl tracking-normal text-white rounded-full bg-primary2 md:text-3xl ">
                    {{ $whatWeDoForYouHeading->name }}
                 </button>
-                <h1 class=" text-white text-xl md:text-2xl  mx-auto text-center max-w-[60ch] leading-normal line-clamp-4">
+                <h2 class=" text-white text-xl md:text-2xl  mx-auto text-center max-w-[60ch] leading-normal line-clamp-4">
                    {{ $whatWeDoForYouHeading->short_description }}
-                </h1>
+                </h2>
                 {{-- <p class="font-costum8 text-white text-sm leading-loose  mx-auto text-center max-w-[500px]">
                     Morem ipsum dolor sit amet,
                     consectetur adipiscing elita florai psum dolor ectetuolor sit amet, consectetur adipiscine.
@@ -170,10 +170,10 @@
     <section class="p-5 mt-6 overflow-hidden md:mt-20">
         <div class="max-w-screen-xl mx-auto">
             <div class="" data-aos="flip-down" data-aos-duration="1000">
-                <h1
+                <h2
                     class="font-costum5 text-5xl bg-gradient-to-r font-bold from-[#2d37a4] to-teal-500 text-transparent bg-clip-text ">
                     {{ $completedProjectHeading->name }}
-                </h1>
+                </h2>
                 <p class="text-xl md:text-[22px] text-text_color2 max-w-[65ch] text-start mt-5 ">
                     {{ $completedProjectHeading->short_description }}
                 </p>
@@ -188,9 +188,9 @@
                             class="w-full aspect-[3/4] object-cover rounded-t-md rounded-br-[200px]">
 
                         <div class="p-8">
-                            <h1 class="text-xl font-bold hover:text-blue-600 hover:cursor-pointer md:text-2xl">
+                            <h2 class="text-xl font-bold hover:text-blue-600 hover:cursor-pointer md:text-2xl">
                                 {{ $item->name }}
-                            </h1>
+                            </h2>
                             <p class="text-xl md:text-[22px] text-text_color2 mt-2">
                                 {{ $item->short_description }}
                             </p>
