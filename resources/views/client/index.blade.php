@@ -202,7 +202,7 @@
                 @endforelse
             </div>
         </div>
-        <div class="max-w-screen-xl px-4 pb-2 mx-auto mt-2 text-xl text-[#43428d] font-bold underline md:text-right">
+        <div class="max-w-screen-xl px-4 pb-2 mx-auto mt-2 text-xl text-[#43428d] font-bold  md:text-right">
             <a href="{{ url('projects') }}">
                 {{ __('messages.seeMore') }} >
             </a>
@@ -262,7 +262,7 @@
                 @endforelse
             </div>
         </div>
-        <div class="max-w-screen-xl px-4 pb-2 mx-auto mt-2 text-xl font-bold text-white underline md:text-right">
+        <div class="max-w-screen-xl px-4 pb-2 mx-auto mt-2 text-xl font-bold text-white md:text-right">
             <a href="{{ url('news') }}">
                 {{ __('messages.seeMore') }} >
             </a>
