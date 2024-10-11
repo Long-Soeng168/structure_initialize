@@ -124,7 +124,7 @@
             showReloadModal(); // Show modal when window is resized
         });
     </script> --}}
-    <script>
+    {{-- <script>
         // Function to show the modal
         function showReloadModal() {
             document.getElementById('reloadModal').classList.remove('hidden');
@@ -158,7 +158,7 @@
                 showReloadModal();
             }
         });
-    </script>
+    </script> --}}
 
 
 </head>
