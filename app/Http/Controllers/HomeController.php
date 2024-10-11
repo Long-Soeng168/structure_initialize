@@ -14,7 +14,7 @@ use App\Models\Video;
 use App\Models\Image;
 use App\Models\Audio;
 use App\Models\Article;
-use App\Models\news;
+use App\Models\News;
 use App\Models\Menu;
 use App\Models\WebsiteInfo;
 use Image as ImageCompress;

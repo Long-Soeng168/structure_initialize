@@ -1,240 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout.client')
+@section('meta_data')
+<link rel="apple-touch-icon" href="{{ asset('/assets/img/logo/LOGO%20For%20Facebook%20Profile%2002.png') }}">
+    <link rel="icon" href="{{ asset('/assets/img/logo/LOGO%20For%20Facebook%20Profile%2002.png') }}">
+<meta name="description" content="Join Repeat Gym, a top-rated fitness center with certified trainers, diverse classes, and custom plans to support your journey to a healthier, stronger you!">
+<meta name="keywords" content="Repeat Gym, Repeat Gym Cambodia, best gym in Cambodia, gym Cambodia, gym Phnom Penh, Cambodia fitness center, Phnom Penh workout, Phnom Penh fitness, strength training in Cambodia, fitness club Phnom Penh, health club Cambodia, fitness goals Cambodia, personal trainer in Cambodia, Cambodia personal trainers, gym with personal training, workout classes Phnom Penh, fitness classes in Cambodia, Cambodia workout classes, best fitness classes Phnom Penh, health and wellness Cambodia, wellness center Phnom Penh, Cambodia wellness center, free trial gym Cambodia, Cambodia fitness trial, top gym Cambodia, Phnom Penh fitness programs, Cambodia fitness, Cambodia gym memberships, gym with best trainers Cambodia, Phnom Penh personal training, Cambodian fitness classes, fitness community Cambodia, gym for strength training, strength and conditioning Phnom Penh, Cambodia sports training, Phnom Penh sports fitness, best gym deals Cambodia, fitness membership Phnom Penh, workout programs Cambodia, Cambodia gym facility, Cambodian strength training, Cambodian workout, fitness programs Phnom Penh, personal fitness coaching Phnom Penh, Cambodia cardio fitness, cardio gym Phnom Penh, Cambodia muscle training, muscle building gym Cambodia, body transformation Phnom Penh, top-rated gyms Cambodia, Cambodia fitness equipment, high-quality gym Cambodia, Cambodia best gym facilities, gym training Phnom Penh, Phnom Penh health clubs, Cambodian fitness centers, fitness Cambodia, Cambodian health and wellness, premier gym Phnom Penh, Phnom Penh body training, physical fitness Cambodia, body health Cambodia, gym health clubs Cambodia">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RUA</title>
-    <!-- Start CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/swiper.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/pdfview.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/audioplayer.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/glightbox.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/no-tailwind.css') }}" />
 
-    <!-- <style>
-        body ::selection {
-            background-color: goldenrod; /* This is bg-blue-900 in Tailwind */
-            color: white; /* This is text-white in Tailwind */
-        }
-    </style> -->
+<meta property="og:title" content="REPEAT GYM Cambodia">
+<meta property="og:description" content="Join Repeat Gym, a top-rated fitness center with certified trainers, diverse classes, and custom plans to support your journey to a healthier, stronger you!">
+<meta property="og:image" content="{{ asset('/assets/img/logo/1.slide.jpg') }}">
+<meta property="og:type" content="website">
+@endsection
 
-    <!-- end Start CSS -->
+@section('content')
+    <!-- Strat transform -->
+    <div id="controls-carousel" class="relative w-full lg:mt-8 mt-[75px]"
+        style="clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%)">
+        <!-- Carousel wrapper -->
+        <div class="relative aspect-[16/6] overflow-hidden ">
+            <!-- Swiper -->
+            <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="3000"
+                autoplay-disable-on-interaction="false">
+                <!-- slide 1 -->
+                <swiper-slide>
+                    <div class="flex items-center justify-center w-full h-full bg-center bg-cover bg-blend-multiply"
+                        data-carousel-item
+                        style="
+                                background-image: url('assets/img/logo/1.slide.jpg');
+                            ">
+                        <!-- Dark Overlay -->
+                        <div class="absolute inset-0 bg-[#151516a6] bg-opacity-80"></div>
 
-    <!-- Start JS -->
-    <script src="{{ asset('assets/js/tailwind34.js') }}"></script>
-    <script src="{{ asset('assets/js/darkModeHead.js') }}"></script>
-    <script src="{{ asset('assets/js/swiper11.js') }}"></script>
-    {{-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> --}}
-    {{-- <script src="{{ asset('assets/js/tailwind.config.js') }}"></script> --}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Siemreap&display=swap"
-        rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: "class", // Enables dark mode based on class
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: "#da373d",
-                        primary: "#15803d",
-                        warning: "#fab105",
-                        warningHover: "#ffb915",
-                    },
-                },
-                fontFamily: {
-                    moul: [
-                        "Moul", "Siemreap", "Arial", "Inter", "ui-sans-serif", "system-ui", "-apple-system",
-                        "system-ui", "Segoe UI", "Helvetica Neue",
-                    ],
-                    siemreap: [
-                        "Siemreap", "Arial", "Inter", "ui-sans-serif", "system-ui", "-apple-system", "system-ui",
-                        "Segoe UI", "Helvetica Neue",
-                    ],
-                    poppins: [
-                        "Poppins", "Roboto", "Arial", "Inter", "ui-sans-serif", "system-ui", "-apple-system",
-                        "system-ui", "Segoe UI", "Helvetica Neue",
-                    ],
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col items-center justify-center px-4 text-c2nter text-w4ite">
+                            <p
+                                class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-costum1 text-[#11ace3] uppercase">
+                                Transform
+                            </p>
+                            <p class="text-xl uppercase sm:my-1 md:my-2 lg:my-3 xl:my-4 sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-costum5"
+                                style="
+                                -webkit-text-fill-color: rgba(255, 255, 255, 0.041);
+                                -webkit-text-stroke-width: 1px;
+                                -webkit-text-stroke-color: rgb(255, 255, 255);
+                            ">
+                                Your Body
+                            </p>
+                            <p
+                                class=" lg:mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-costum1 text-[#11ace3] uppercase">
+                                With Us
+                            </p>
+                            <div class="flex items-center justify-center py-2 lg:py-5">
+                                <button
+                                    class="px-3 font-bold border-t sm:px-4 md:px-5 lg:px-10 xl:px-12 2xl:px-14 lg:border-t-2"></button>
+                            </div>
+                            <a href="{{ url('/contact_us') }}"
+                                class="px-1 sm:px-2 py-1 gradient-bg uppercase text-white font-costum3 text-[5px] sm:text-[8px] md:text-[11px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] rounded-full transition duration-300">
+                                Join Us Now!
+                            </a>
+                        </div>
 
-                },
-            },
-        };
-    </script>
-    <script defer src="{{ asset('assets/js/alpine31.js') }}"></script>
-    <script defer src="{{ asset('assets/js/darkMode.js') }}"></script>
-    <script defer src="{{ asset('assets/js/flowbite23.js') }} "></script>
-    <script defer src="{{ asset('assets/js/pdfPopup.js') }}"></script>
-    <script defer src="{{ asset('assets/js/glightbox.js') }}"></script>
-    <script defer src="{{ asset('assets/js/glightbox.config.js') }}"></script>
-    <!-- End JS -->
-</head>
+                    </div>
+                </swiper-slide>
+                <!-- slide 2 -->
+                <swiper-slide>
+                    <div class="flex items-center justify-center w-full h-full bg-center bg-cover bg-blend-multiply"
+                        data-carousel-item
+                        style="
+                                background-image: url('assets/img/logo/2.slide.jpg');
+                            ">
+                        <!-- Dark Overlay -->
+                        <div class="absolute inset-0 bg-[#151516a6] bg-opacity-80"></div>
 
-<body class="">
-    {{-- Start Header --}}
-    <Header>
-        <section class="max-w-screen-xl px-2 mx-auto ">
-            <div class="grid items-center grid-cols-12">
-                <div class="flex items-center justify-start col-span-12 p-2 lg:col-span-3 ">
-                    <img src="{{ asset('/app_assets/logo.png') }}" class="object-contain w-20 rounded-md aspect-square"
-                        alt="">
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col items-center justify-center px-4 text-c2nter text-w4ite">
+                            <p
+                                class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-costum1 text-[#11ace3] uppercase">
+                                Transform
+                            </p>
+                            <p class="text-xl uppercase sm:my-1 md:my-2 lg:my-3 xl:my-4 sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-costum5"
+                                style="
+                                -webkit-text-fill-color: rgba(255, 255, 255, 0.041);
+                                -webkit-text-stroke-width: 1px;
+                                -webkit-text-stroke-color: rgb(255, 255, 255);
+                            ">
+                                Your Body
+                            </p>
+                            <p
+                                class=" lg:mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-costum1 text-[#11ace3] uppercase">
+                                With Us
+                            </p>
+                            <div class="flex items-center justify-center py-2 lg:py-5">
+                                <button
+                                    class="px-3 font-bold border-t sm:px-4 md:px-5 lg:px-10 xl:px-12 2xl:px-14 lg:border-t-2"></button>
+                            </div>
+                            <a href="{{ url('/contact_us') }}"
+                                class="px-1 sm:px-2 py-1 gradient-bg uppercase text-white font-costum3 text-[5px] sm:text-[8px] md:text-[11px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] rounded-full transition duration-300">
+                                Join Us Now!
+                            </a>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+                <!-- slide 3 -->
+                <swiper-slide>
+                    <div class="flex items-center justify-center w-full h-full bg-center bg-cover bg-blend-multiply"
+                        data-carousel-item
+                        style="
+                                background-image: url('assets/img/logo/3.slide.jpg');
+                            ">
+                        <!-- Dark Overlay -->
+                        <div class="absolute inset-0 bg-[#151516a6] bg-opacity-80"></div>
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col items-center justify-center px-4 text-c2nter text-w4ite">
+                            <p
+                                class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-costum1 text-[#11ace3] uppercase">
+                                Transform
+                            </p>
+                            <p class="text-xl uppercase sm:my-1 md:my-2 lg:my-3 xl:my-4 sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-costum5"
+                                style="
+                                -webkit-text-fill-color: rgba(255, 255, 255, 0.041);
+                                -webkit-text-stroke-width: 1px;
+                                -webkit-text-stroke-color: rgb(255, 255, 255);
+                            ">
+                                Your Body
+                            </p>
+                            <p
+                                class=" lg:mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-costum1 text-[#11ace3] uppercase">
+                                With Us
+                            </p>
+                            <div class="flex items-center justify-center py-2 lg:py-5">
+                                <button
+                                    class="px-3 font-bold border-t sm:px-4 md:px-5 lg:px-10 xl:px-12 2xl:px-14 lg:border-t-2"></button>
+                            </div>
+                            <a href="{{ url('/contact_us') }}"
+                                class="px-1 sm:px-2 py-1 gradient-bg uppercase text-white font-costum3 text-[5px] sm:text-[8px] md:text-[11px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] rounded-full transition duration-300">
+                                Join Us Now!
+                            </a>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+
+            <!-- Swiper JS -->
+            <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        </div>
+    </div>
+    <!-- End transform -->
+
+    <!-- strat middle -->
+    <div class="mt-10">
+        <div class="flex flex-col items-center justify-center mx-5 text-2xl font-bold md:text-3xl lg:text-4xl"
+            data-aos="fade-up" data-aos-duration="2000">
+            <p class="uppercase text-[#11ace3] font-costum3 text-center">
+                REPEAT GYM HAS THE MOST
+                <span class="p-2 bg-[#11abe326] text-[#ffffff] rounded-xl">COACHES</span>
+                IN CAMBODIA,
+            </p>
+            <h1 class="mt-3 text-lg text-center uppercase md:text-2xl lg:text-3xl font-costum3">
+                OFFERING YOU THE BEST SUPPORT AND GUIDANCE
+            </h1>
+        </div>
+        <div class="flex items-center justify-center py-6 md:py-8 lg:py-10">
+            <button class="font-bold px-10 md:px-14 py-2 md:py-3 border-t-2 border-[#11ace3]"></button>
+        </div>
+        <div class="relative max-w-screen-xl mx-auto overflow-hidden">
+            <div class="p-4 bg-[#2b2b2e] rounded-2xl">
+                <img alt="Reapeat Gym Activity image" class="rounded-2xl aspect-[16/6] object-cover w-full"
+                    src="{{ asset('assets/img/logo/4.all coach.jpg') }}" />
+            </div>
+        </div>
+    </div>
+
+    <!-- End middle -->
+
+    <!-- Strat Section -->
+    <section class="py-8 overflow-hidden antialiased md:py-12">
+        <div class="max-w-screen-xl px-8 py-8 mx-auto sm:py-12 lg:px-6">
+            <div class="gap-8 space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="bg-black p-4 border border-transparent hover:border-[#11ace3] transform hover:scale-105 mx-auto duration-700 transition-all w-full">
+                    <img alt="Reapeat Gym Activity image" class="object-cover aspect-square" src="{{ asset('assets/img/logo/5.Result.jpg') }}"
+                        alt="Image description" />
                     <div class="text-center">
-                        <h1 class="text-sm font-moul">សាកលវិទ្យាល័យភូមិន្ទកសិកម្ម</h1>
-                        <h2 class="text-sm font-poppins">Royal University of Agriculture </h2>
+                        <a href="#">
+                            <h5 class="my-4 text-xl md:text-2xl font-bold tracking-tight text-[#11ace3] uppercase">
+                                RESULT
+                            </h5>
+                        </a>
+                        <p class="mb-8 text-sm uppercase md:text-xl dark:text-gray-400 font-costum7">
+                            ACHIEVING REAL FITNESS RESULTS
+                        </p>
                     </div>
                 </div>
-                <div class="col-span-12 py-2 lg:col-span-9">
-                    <div class="flex-col items-center w-full gap-5 md:w-auto md:flex md:order-1"
-                        id="navbar-dropdown">
-                        <!--Start Search-->
-                        <form class="flex w-full gap-2" action="http://45.13.132.18/search">
-                            <label for="voice-search" class="sr-only">Search</label>
-                            <div class="relative w-full">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 " fill="currentColor"
-                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <input type="text" id="voice-search"
-                                    class="w-full border h-full border-gray-300 text-gray-900 text-sm focus:ring-primary focus:border-primary block  pl-10 p-2.5"
-                                    name="search" placeholder="Search..." required="">
-                            </div>
-                            <button type="submit"
-                                class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-primary border border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
-                                <svg aria-hidden="true" class="w-5 h-5 -ml-1 " fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                </svg>
-                                Search
-                            </button>
-                            <a href="#" type="button"
-                                class=" inline-flex items-center font-medium justify-center p-2.5 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100">
-                                <img class="object-cover w-8 rounded-full"
-                                    src="http://45.13.132.18/public/images/khmer.png" alt="">
-
-                            </a>
-                            <a href="#" type="button"
-                                class="bg-gray-200 inline-flex items-center font-medium justify-center p-2.5 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100">
-                                <img class="object-cover w-8 rounded-full"
-                                    src="http://45.13.132.18/public/images/english.png" alt="">
-                            </a>
-                            <button data-collapse-toggle="navbar-default" type="button"
-                                    class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                                    aria-controls="navbar-default" aria-expanded="false">
-                                    <span class="sr-only">Open main menu</span>
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 17 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-                                    </svg>
-                                </button>
-                        </form>
-                        <!--End Search-->
-
-
-                        <nav class="hidden w-full bg-white border-gray-200 lg:block dark:bg-gray-900">
-                            <div class="flex flex-wrap items-center justify-end max-w-screen-xl mx-auto">
-
-                                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                                    <ul
-                                        class="flex justify-end">
-                                        <li class="flex items-center px-2 leading-4 text-gray-700 max-w-32 hover:underline">
-                                            <a href="">
-                                                <p class="p-1 text-center">
-                                                    Home
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center px-2 leading-4 text-gray-700 max-w-32 hover:underline">
-                                            <a href="">
-                                                <p class="p-1 text-center">
-                                                    About RUA
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center px-2 leading-4 text-gray-700 max-w-32 hover:underline">
-                                            <a href="">
-                                                <p class="p-1 text-center">
-                                                    Management
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center px-2 leading-4 text-gray-700 max-w-32 hover:underline">
-                                            <a href="">
-                                                <p class="p-1 text-center">
-                                                    Foundation
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center px-2 leading-4 text-gray-700 max-w-32 hover:underline">
-                                            <a href="">
-                                                <p class="p-1 text-center">
-                                                    Graduate Program
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center px-2 leading-4 text-gray-700 max-w-32 hover:underline">
-                                            <a href="">
-                                                <p class="p-1 text-center">
-                                                    Research and  Development Project
-                                                </p>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-
-
+                <div
+                    class="bg-black p-4 border border-transparent hover:border-[#11ace3] transform hover:scale-105 mx-auto duration-700 transition-all w-full">
+                    <img alt="Reapeat Gym Activity image" class="object-cover w-full aspect-square" src="{{ asset('assets/img/logo/6.Service.jpg') }}"
+                        alt="Image description" />
+                    <div class="text-center">
+                        <a href="#">
+                            <h5 class="my-4 text-xl md:text-2xl font-bold tracking-tight text-[#11ace3] uppercase">
+                                Service
+                            </h5>
+                        </a>
+                        <p class="mb-8 text-sm uppercase md:text-xl dark:text-gray-400 font-costum7">
+                            PROVIDING EXCEPTIONAL CUSTOMER SERVICE
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="bg-black p-4 border border-transparent hover:border-[#11ace3] transform hover:scale-105 mx-auto duration-700 transition-all w-full">
+                    <img alt="Reapeat Gym Activity image" class="object-cover w-full aspect-square" src="{{ asset('assets/img/logo/7.HYGIENE.jpg') }}"
+                        alt="Image description" />
+                    <div class="text-center">
+                        <a href="#">
+                            <h5 class="my-4 text-xl md:text-2xl font-bold tracking-tight text-[#11ace3] uppercase">
+                                Hygiene
+                            </h5>
+                        </a>
+                        <p class="mb-8 text-sm uppercase md:text-xl dark:text-gray-400 font-costum7">
+                            WE KEEP OUR GYM SANITIZED AND SAFE, PRIORITIZING
+                            MEMBERS' HEALTH.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-        {{-- Start Bottom Navbar --}}
-        <section class="hidden w-full px-2 border-gray-200 bg-primary lg:block dark:bg-gray-800">
-            <nav class="max-w-screen-xl mx-auto">
-                <ul class="flex justify-end">
-                    <li class="flex items-center px-1 leading-4 text-white border-r border-white max-w-36 hover:bg-white hover:text-primary">
-                        <a href="">
-                            <p class="p-1 text-center">
-                                Academic Program
-                            </p>
-                        </a>
-                    </li>
-                    <li class="flex items-center px-1 leading-4 text-white border-r border-white max-w-36 hover:bg-white hover:text-primary">
-                        <a href="">
-                            <p class="p-1 text-center">
-                                Faculty
-                            </p>
-                        </a>
-                    </li>
-                    <li class="flex items-center px-1 leading-4 text-white border-r border-white max-w-36 hover:bg-white hover:text-primary">
-                        <a href="">
-                            <p class="p-1 text-center">
-                                Student life
-                            </p>
-                        </a>
-                    </li>
-                    <li class="flex items-center px-1 leading-4 text-white border-r border-white max-w-36 hover:bg-white hover:text-primary">
-                        <a href="">
-                            <p class="p-1 text-center">
-                                Industrial Linkage and Business Startup
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        {{-- End Bottom Navbar --}}
-    </Header>
-    {{-- End Header --}}
-</body>
+        </div>
+    </section>
 
-</html>
+    <!--End Section  -->
+
+    <!-- Strat section -->
+    <section class="relative flex w-full py-20 mt-20 bg-black px-7 md:p-20"
+        style="
+                background-image: url('assets/img/bg/bg1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            ">
+        <div class="absolute inset-0 bg-[#000000] bg-opacity-85"></div>
+        <div
+            class="relative z-10 grid max-w-screen-xl grid-cols-1 gap-10 mx-auto md:grid-cols-2 lg:grid-cols-3 sm:gap-16 md:gap-12 lg:gap-8">
+            <div
+                class="p-3 rounded-xl bg-[#393946] hover:scale-105 transition duration-300 hover:border-[#11ace3] border border-transparent opacity-60 hover:opacity-100">
+                <img alt="Reapeat Gym Activity image" src="{{ asset('assets/img/logo/8.GROUP TRAINING0.jpg') }}"
+                    class="w-full h-[500px] object-cover rounded-xl" />
+                <p class="uppercase text-[#11ace3] text-2xl font-medium mt-2 text-center">
+                    Group Training
+                </p>
+            </div>
+            <div
+                class="p-3 rounded-xl bg-[#393946] hover:scale-105 transition duration-300 hover:border-[#11ace3] border border-transparent opacity-60 hover:opacity-100">
+                <img alt="Reapeat Gym Activity image" src="{{ asset('assets/img/logo/9.PERSONAL TRAINING.jpg') }}"
+                    class="w-full h-[500px] object-cover rounded-xl" />
+                <p class="uppercase text-[#11ace3] text-2xl font-medium mt-2 text-center">
+                    Personal Training
+                </p>
+            </div>
+            <div
+                class="p-3 rounded-xl bg-[#393946] hover:scale-105 transition duration-300 hover:border-[#11ace3] border border-transparent opacity-60 hover:opacity-100">
+                <img alt="Reapeat Gym Activity image" src="{{ asset('assets/img/logo/10.TEAM TRAINING.jpg') }}"
+                    class="w-full h-[500px] object-cover rounded-xl" />
+                <p class="uppercase text-[#11ace3] text-2xl font-medium mt-2 text-center">
+                    Team Training
+                </p>
+            </div>
+        </div>
+    </section>
+@endsection
