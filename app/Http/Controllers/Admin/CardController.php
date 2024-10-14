@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class CardController extends Controller
 {
-    // public function __construct()
-    // {
-    //     $this->middleware('permission:view page', ['only' => ['index', 'show']]);
-    //     $this->middleware('permission:create page', ['only' => ['create', 'store']]);
-    //     $this->middleware('permission:update page', ['only' => ['edit', 'update']]);
-    //     $this->middleware('permission:delete page', ['only' => ['destroy']]);
-    // }
+    public function __construct()
+    {
+        $this->middleware('permission:view card', ['only' => ['index', 'show']]);
+        $this->middleware('permission:create card', ['only' => ['create', 'store']]);
+        $this->middleware('permission:update card', ['only' => ['edit', 'update']]);
+        $this->middleware('permission:delete card', ['only' => ['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      */

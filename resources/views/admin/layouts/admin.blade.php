@@ -778,6 +778,24 @@
                                 </x-sidebar-item>
                             </li>
                         @endcan
+                        @can('view card')
+                            <li x-data="{
+                                init() {
+                                    if ({{ request()->is('admin/cards*') ? 'true' : 'false' }}) {
+                                        this.$nextTick(() => this.$refs.cards.scrollIntoView({ behavior: 'smooth' }));
+                                    }
+                                }
+                            }" x-ref="cards">
+                                <x-sidebar-item href="{{ route('admin.cards.index') }}"
+                                    class="{{ request()->is('admin/cards*') ? 'bg-slate-200 dark:bg-slate-500' : '' }}">
+                                    <img src="{{ asset('assets/icons/card.png') }}" alt="icon"
+                                        class="object-contain w-8 h-8 p-0.5 bg-white dark:bg-gray-200 rounded">
+                                    <span class="ml-3">
+                                        {{ __('messages.card') }}
+                                    </span>
+                                </x-sidebar-item>
+                            </li>
+                        @endcan
                         @can('view heading')
                             <li x-data="{
                                 init() {

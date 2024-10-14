@@ -135,5 +135,6 @@ return [
     'contact' => 'Contact',
     'heading' => 'Heading',
     'gallery' => 'Gallery',
+    'card' => 'Card',
 
 ];
