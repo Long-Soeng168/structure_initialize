@@ -513,7 +513,7 @@
                     </li> --}}
                 </ul>
 
-                <ul class="pt-3 mt-5 border-t border-gray-200 dark:border-gray-700">
+                <ul class="">
                     @forelse ($menu_databases as $database)
                         @if ($database->type != 'slug')
                             @continue
@@ -759,7 +759,7 @@
 
                     </ul>
 
-                    <ul class="pt-5 mt-5 space-y-1 border-t border-gray-200 dark:border-gray-700">
+                    <ul class="space-y-1 ">
                         @can('view page')
                             <li x-data="{
                                 init() {
@@ -1030,7 +1030,7 @@
 
                 </div>
                 <div
-                    class="absolute bottom-0 z-20 flex justify-center w-full p-4 space-x-4 bg-white border-t dark:border-t-slate-600 dark:bg-gray-800">
+                    class="absolute bottom-0 z-20 flex justify-center w-full p-4 space-x-4 bg-white dark:bg-gray-800">
                     <button id="theme-toggle" type="button"
                         class="p-2 text-sm text-gray-600 rounded-lg hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700">
                         <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
