@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\CardController;
 use App\Http\Controllers\Admin\HeadingController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\AudioController;
@@ -107,6 +108,7 @@ Route::group([
     Route::get('audios_images/{id}', [AudioController::class, 'images']);
 
     Route::resource('pages', PageController::class);
+    Route::resource('cards', CardController::class);
     Route::resource('headings', HeadingController::class);
     Route::resource('gallery', GalleryController::class);
 
